@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+
+body{
+    max-height: 200vh;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: hsl(210, 60%, 98%);
+}
+p {
+    font-size: 15px;
+    color: hsl(219, 12%, 42%);
+}
+ul{
+    list-style: none;
+}
+main{
+    height: 100%;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    background-color: white;
+}
+
+.header{
+    background-color: white;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header > p{
+    cursor: pointer;
+}
+.header > p:hover{
+    color: hsl(219, 85%, 26%);;
+}
+.notification_number {
+    background: hsl(219, 85%, 26%);
+    padding: 0.2rem 0.7rem;
+    border-radius: 5px;
+    color: white;
+    margin-left: 0.5rem;
+}
+.body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.body_item{
+    display: flex;
+    padding: 1rem 0.5rem;
+    /* background-color: hsl(211, 68%, 94%); */
+    background-color: transparent;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+.body_item.unread{
+    background-color: hsl(211, 68%, 94%);
+}
+/* .body_item:nth-child(4),.body_item:nth-child(5),.body_item:nth-child(6),.body_item:nth-child(7){
+    background-color: transparent;
+} */
+.body_item > img{
+    height: 45px;
+    width: 45px;
+    margin: 0.5rem 0.8rem 0rem 0.3rem;
+}
+.title{
+    font-size: 18px;
+    padding: 0.3rem 0rem;
+}
+.user_name{
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.user_name:hover{
+    color: hsl(219, 85%, 26%);
+}
+.event{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.event:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.time {
+    color: hsl(219, 14%, 63%);
+}
+.body_item:nth-child(3) > .notification_info > .title > .event ,.body_item:nth-child(7) > .notification_info > .title > .event {
+    color: hsl(219, 85%, 26%);
+}
+.notification_dot{
+    color: hsl(1, 90%, 64%);
+    font-weight: bolder;
+    margin-left: 0.5rem;
+}
+.notification_msg{
+    border: 1px solid hsl(219, 14%, 63%);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 1rem 0.5rem 0rem;
+    cursor: pointer;
+}
+.notification_msg:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+
+@media (min-width:425px)  {
+.body_item:nth-child(5) > img:nth-child(3){
+margin-left: auto;
+}
+}
+
+@media (min-width:768px)  {
+    p{
+        font-size: 18px;
+    }
+    
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        width: 750px;
+        height: 880px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .body_item{
+        padding: 0.5rem 0.5rem;
+        margin-top: 0.8rem;
+    }
+    .header{
+        height: 4rem;
+    }
+    .header > h2 {
+        font-size: xx-large;
+    } 
+    .body_item:nth-child(5) > img:nth-child(3){
+    margin-left: auto;
+}
+}
